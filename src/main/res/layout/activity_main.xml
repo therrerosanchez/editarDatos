@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margen_dcho"
+            android:layout_marginStart="@dimen/margen_izdo"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/campo_nombre"
+                android:layout_width="308dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/nombre"
+                android:inputType="textCapWords"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/til_nombre"
+            android:layout_marginStart="32dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="8"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/campo_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="@string/fecha_de_nacimiento"
+                android:inputType="date"
+                android:maxLines="1"
+                android:text="@string/fecha_de_nacimiento" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/til_fecha"
+            android:layout_marginStart="32dp"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/campo_telefono"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/telefono"
+                android:inputType="phone"
+                app:errorEnabled="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/til_telefono"
+            android:layout_marginStart="32dp"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/campo_correo"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                app:errorEnabled="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/til_correo"
+            android:layout_marginStart="32dp">
+
+            <EditText
+                android:id="@+id/campo_descripcion"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/observaciones"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                app:errorEnabled="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/boton_aceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="@string/aceptar"
+            android:textColor="@android:color/white" tools:targetApi="lollipop"/>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
