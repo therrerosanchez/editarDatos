@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margen_dcho">32dp</dimen>
+    <dimen name="margen_izdo">32dp</dimen>
+    <dimen name="ancho_columna1">80dp</dimen>
+    <dimen name="padding_vertical">7dp</dimen>
+</resources>
